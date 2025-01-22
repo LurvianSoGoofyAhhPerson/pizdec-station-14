@@ -1,0 +1,8 @@
+- type: entity
+  parent: MonkeyCube
+  id: KoboldCube
+  name: kobold cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobKobold

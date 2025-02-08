@@ -1,0 +1,59 @@
+- type: entity
+  name: роборукие перчатки
+  parent: BaseItem
+  id: Stungloves
+  description: Бип буп борп!..?
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/robohands.rsi
+    state: icon
+  - type: ItemToggle
+    soundActivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundDeactivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        variation: 0.250
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Shock: 5
+  - type: Stunbaton
+    energyPerUse: 30
+  - type: MeleeWeapon
+    mustBeEquippedToUse: true
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 2.5
+    angle: 60
+    animation: WeaponArcThrust
+  - type: StaminaDamageOnHit
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: StaminaDamageOnCollide
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: Battery
+    maxCharge: 360
+    startingCharge: 360
+  - type: UseDelay
+  - type: Item
+    sprite: Clothing/Hands/Gloves/robohands.rsi
+    state: icon
+    size: Normal
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/robohands.rsi
+    quickEquip: false
+    slots:
+    - gloves
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-black
+  - type: FingerprintMask

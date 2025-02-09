@@ -1,5 +1,5 @@
 <p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://github.com/TerwoodTwink/fucking-assets/blob/main/pizdec-logo.png" /></p>
-
+[Наш Discord](https://discord.gg/UFAMjGu28T) | [Наша Вики](https://www.youtube.com/watch?v=FQlAEiCb8m0) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) |
 Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
 Это репозиторий первого русскоязычного сервера по Space Station 14, целью которого является полный перевод игры на русский язык, поддержка актуальных изменений из основного репозитория, а так же добавление собственных изменений по необходимости.

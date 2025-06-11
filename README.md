@@ -1,43 +1,43 @@
-<div class="header" align="center">
-<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">
-</div>
-
-Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
-
-Целью этого репозитория является хостинг ванильного сервера, на русском языке.
-
-## Наши ссылки
-
-[Discord](https://discord.gg/KtHkxwrFnU)
-
-## Ссылки оффициальных разработчиков
+<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://github.com/LurvianSoGoofyAhhPerson/fucking-assets/blob/main/pizdec-logo.png" /></p>
 
 <div class="header" align="center">
 
-[Website](https://spacestation14.com/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.com/) | [Mastodon](https://mastodon.gamedev.place/@spacestation14) | [Lemmy](https://lemmy.spacestation14.com/) | [Patreon](https://www.patreon.com/spacestation14) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)
+[![Discord](https://img.shields.io/discord/831352358520725506?label=Discord&logo=discord&logoColor=white)](https://discord.gg/ssJTANEa)
+[![Wiki](https://img.shields.io/badge/Wiki-SS14%20Official-blue)](https://wiki.spacestation14.com/wiki/Main_Page)
+[![Steam](https://img.shields.io/badge/Steam-SS14%20Official-blue)](https://store.steampowered.com/app/1255460/Space_Station_14/)
+[![Client](https://img.shields.io/badge/Client-Download-blue)](https://spacestation14.io/about/nightlies/)
+[![GitHub](https://img.shields.io/github/stars/LurvianSoGoofyAhhPerson/pizdec-station-14?style=social)](https://github.com/LurvianSoGoofyAhhPerson/pizdec-station-14)
+
+# Слава НРП  Слава НРП  Слава НРП  
 
 </div>
+
+Space Station 14 — это ролевая игра, вдохновлённая культовой классикой Space Station 13. Это сборка NoneRolePlay проекта, а именно Пиздец Станции 14. Проект позицианирует себя как "свободный от оков RolePlay'я" - каждый на этом сервере волен творить то, что он хочет(В рамках небольшого количества правил).
 
 ## Документация
 
-На официальном сайте с [документацией](https://docs.spacestation14.com/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом.
-Кроме того, информацию о лицензиях и авторстве можно найти на этих ресурсах:
-- [Robust 	](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)
-- [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
+На официальном сайте с [документацией](https://docs.spacestation14.io/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом. Также имеется много информации для начинающих разработчиков.
 
-Также имеется много информации для начинающих разработчиков.
+## Вклад
 
-## Контрибьютинг
+Если вы хотите вложить свой вклад в разработку нашего проекта - мы ждём вас на [нашем сервере Discord](https://discord.gg/2AdnUUDWrP), где мы вас сможем принять в разработчики.
 
-Если вы желаете помочь с решением проблем или добавлением нового функционала, вам нужно делать это в [оффициальный репозиторий](https://github.com/space-wizards/space-station-14). Так же там находится вся остальная информация по разработке и сборке билда.
+## Готовая сборка
 
-В этом репозитории вы можете помочь с переводом и проблемами, которые к нему относятся, посмотрев список [проблем](https://github.com/lzk228/space-axolotl-14/issues) или спросив в нашем дискорде.
+Готовые сборки именно этого проекта будут находиться в разделе **"Releases"**. Можете спокойно скачивать и пользоваться, но убедительная просьба, если вы открываете сервер на базе этой сборки - **ни в коем случае** не удаляйте памятники/плакаты, что посвящены дорогим этому проекту людям(включая плакат набегаторов).
+
+## Самостоятельная сборка
+
+1. Склонируйте этот репозиторий.
+2. Запустите скрипт `RUN_THIS.py` для инициализации субмодулей и скачивания движка.
+3. Соберите решение через Visual Studio или dotnet в терминале.
+
+[Более детальная инструкция для сборки.](https://docs.spacestation14.com/en/general-development/setup.html)
 
 ## Лицензия
 
-Весь код репозитория лицензирован под [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).
+Весь код репозитория лицензирован под [MIT](https://gitlab.workbench.network/Workbench-Team/space-station-14/blob/master-ru/LICENSE.TXT).
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Метаданные для монтировки](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) как пример.
+Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) если не имеют иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://gitlab.workbench.network/Workbench-Team/space-station-14/blob/master-ru/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
-> [!NOTE]
-> Некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если Вы хотите использовать этот проект в коммерческих целях.

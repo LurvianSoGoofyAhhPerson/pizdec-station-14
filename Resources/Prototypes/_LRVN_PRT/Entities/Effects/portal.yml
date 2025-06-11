@@ -1,0 +1,23 @@
+- type: entity
+  id: PortalUnstableWormhole
+  name: нестабильная червоточина
+  parent: BasePortal
+  description: Крайне нестабильный портал, всасывающий в себя всё, что не приколочено.
+  components:
+  - type: Sprite
+    layers:
+    - state: portal-blue
+      color: "#328143"
+      scale: 2, 2
+  - type: PointLight
+    color: "#328143"
+    radius: 7
+    energy: 5
+    netsync: false
+  - type: TimedDespawn
+    lifetime: 7
+  - type: GravityWell
+    maxRange: 8
+    baseRadialAcceleration: 145
+    baseTangentialAcceleration: 5
+    gravPulsePeriod: 0.1

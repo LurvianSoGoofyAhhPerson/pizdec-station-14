@@ -1,0 +1,37 @@
+# TODO: Rebalance that shit
+
+- type: listing
+  id: SupplyPad
+  name: ящик аварийного снаряжения
+  description: Капсула включает в себя ящик, содержащий внутри себя 6 скафандров ВКД, 6 баллонов азота и кислорода, а так-же 6 противогазов и масок.
+  productEntity: SpawnSupplyCrateEmergency
+  categories:
+    - SupplyPadBasic
+  restockTime: 300
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: SupplyPad
+  name: ящик аптечек первой помощи
+  description: Капсула включает в себя ящик, содержащий 4 аптечки.
+  productEntity: SpawnSupplyCrateMedkit
+  categories:
+    - SupplyPadBasic
+  restockTime: 1800
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: SupplyPad
+  name: ящик надувных стен
+  description: Капсула включает в себя ящик, содержащий коробку с надувными стенами. В сумме этих стен где-то 30 штук.
+  productEntity: SpawnSupplyCrateInflatablewall
+  categories:
+    - SupplyPadBasic
+  restockTime: 1800
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3

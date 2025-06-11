@@ -1,0 +1,44 @@
+- type: entity
+  name: сырое мясо гондолы
+  parent: FoodMeatRawBase
+  id: FoodMeatBearfoot
+  description: Монструозный кусок гондольского мяса.
+  components:
+  - type: Sprite
+    state: bear
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Gondolium
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 9
+  - type: Construction
+    graph: BearfootSteak
+    node: start
+    defaultTarget: MetamorphBaer
+
+- type: entity
+  name: готовое мясо гондолы
+  parent: FoodMeatBase
+  id: FoodMeatBearfootCooked
+  description: Хорошо прожареный кусок гондольского мяса. Жестковат, но вкусен с разных сторон.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    layers:
+    - state: product-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Gondolium
+          Quantity: 15
+  - type: Construction
+    graph: BearfootSteak
+    node: MetamorphBaer

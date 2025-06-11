@@ -1,0 +1,36 @@
+# Саппли поды
+
+- type: storeCategory
+  id: SupplyPadBasic
+  name: Стандарт
+  priority: 0
+
+- type: storeCategory
+  id: SupplyPadCargo
+  name: Карго
+  priority: 1
+
+- type: storeCategory
+  id: SupplyPadMedical
+  name: Медицина
+  priority: 1
+
+- type: storeCategory
+  id: SupplyPadSecurity
+  name: Служба Безопасности
+  priority: 1
+
+- type: storeCategory
+  id: SupplyPadService
+  name: Сервис
+  priority: 1
+
+- type: storeCategory
+  id: SupplyPadResearch
+  name: НИО
+  priority: 1
+
+- type: storeCategory
+  id: SupplyPadEngine
+  name: Инженерия
+  priority: 1

@@ -1,0 +1,31 @@
+- type: entity
+  name: Стальной Занавес
+  id: WeaponIronCurtains
+  parent: BaseWeaponHeavyMachineGun
+  description: Очень тяжёлый пулемёт, что имеет 200 пуль внутри. Пули пополнить нельзя, что делает его бесполезным после окончания боеприпаса.
+  components:
+  - type: Sprite
+    sprite: _LRVN_TEX/Objects/Weapons/Guns/iron-curtains.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+  - type: Gun
+    minAngle: 5
+    maxAngle: 25
+    fireRate: 8
+    projectileSpeed: 22.5
+  - type: MultiHandedItem
+  - type: HeldSpeedModifier
+    sprintModifier: 0.55
+    walkModifier: 0.55
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
+  - type: BallisticAmmoProvider
+    proto: CartridgeMinigun
+    capacity: 200
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []

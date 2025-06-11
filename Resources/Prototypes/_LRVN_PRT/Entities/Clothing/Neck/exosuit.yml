@@ -1,0 +1,40 @@
+- type: entity
+  parent: Clothing
+  name: промышленный экзокостюм
+  description: Экзокостюм, одевающийся поверх брони или верхней одежды. Благодаря различным пружинным механизмам ускоряет вашу скорость вдвое.
+  id: ClothingNeckExosuitBlue
+  components:
+    - type: Item
+      size: Huge
+    - type: Clothing
+      sprite: Clothing/OuterClothing/Coats/detective.rsi
+      quickEquip: true
+      slots:
+        - neck
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.90
+          Piercing: 0.95
+          Heat: 0.90
+          Radiation: 0.25
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Coats/detective.rsi
+    - type: ClothingSpeedModifier
+      walkModifier: 2.3
+      sprintModifier: 2.3
+    - type: Tag
+      tags:
+        - WhitelistChameleon
+
+- type: entity
+  parent: ClothingNeckExosuitBlue
+  id: ClothingNeckExosuitRed
+  name: bomber jacket
+  description: A thick, well-worn WW2 leather bomber jacket.
+  components:
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Coats/bomber.rsi
+    - type: Clothing
+      sprite: Clothing/OuterClothing/Coats/bomber.rsi

@@ -1,0 +1,23 @@
+- type: entity
+  parent: [BaseItem, StorePresetSupplyPadCargo]
+  id: ItemSupplyPadCargo
+  name: cargo supply pad
+  description: Небольшое на вид устройство, способное вызывать капсулы поддержки. 
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      SerialCode: 725483

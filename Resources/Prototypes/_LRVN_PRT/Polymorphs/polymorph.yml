@@ -1,0 +1,9 @@
+- type: polymorph
+  id: BearfootMorph
+  configuration:
+    entity: MobBearfoot
+    forced: true
+    transferHumanoidAppearance: true
+    inventory: None
+    revertOnDeath: false
+    revertOnCrit: false

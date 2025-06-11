@@ -1,0 +1,85 @@
+# Саппли Пады
+
+- type: entity
+  id: StorePresetSupplyPadBasic
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    currencyWhitelist:
+    - SerialCode
+
+- type: entity
+  id: StorePresetSupplyPadCargo
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    - SupplyPadCargo
+    currencyWhitelist:
+    - SerialCode
+
+- type: entity
+  id: StorePresetSupplyPadMedical
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    - SupplyPadMedical
+    currencyWhitelist:
+    - SerialCode
+
+- type: entity
+  id: StorePresetSupplyPadSecurity
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    - SupplyPadSecurity
+    currencyWhitelist:
+    - SerialCode
+
+- type: entity
+  id: StorePresetSupplyPadService
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    - SupplyPadService
+    currencyWhitelist:
+    - SerialCode
+
+- type: entity
+  id: StorePresetSupplyPadResearch
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    - SupplyPadResearch
+    currencyWhitelist:
+    - SerialCode
+
+- type: entity
+  id: StorePresetSupplyPadEngine
+  abstract: true
+  components:
+  - type: Store
+    name: Пожалуйста, используйте по назначению.
+    categories:
+    - SupplyPadBasic
+    - SupplyPadEngine
+    currencyWhitelist:
+    - SerialCode
+    

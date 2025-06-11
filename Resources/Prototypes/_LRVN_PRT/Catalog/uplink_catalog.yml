@@ -1,0 +1,41 @@
+# TODO: Накидать больше херни в аплинк
+
+- type: listing
+  id: UplinkStungloves
+  name: Наэлектризованные перчатки
+  description: Роборукие перчатки, не имеющие внешних отличий от оригинала. При активации и ударе ослабляют свою жертву так, как это делает дубинка-шокер. Заряжаются в заряднике для оружия.
+  productEntity: Stungloves
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkDeception
+
+- type: listing
+  id: UplinkSyndicateCrossbow
+  name: Мини энерго-арбалет
+  description: Оружие, излюбленное специалистами синдиката предпочитающим работать скрытно.
+  productEntity: WeaponSyndicateCrossbow
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkBearfoot
+  name: Гондола
+  description: Священное животное множества религий. Будет смешно, превратить всех в такое чучело.
+  icon: { sprite: LRVN/Mobs/Animals/bearfoot.rsi, state: old-radio-bearfoot }
+  productEntity: MobBearfoot
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkAllies

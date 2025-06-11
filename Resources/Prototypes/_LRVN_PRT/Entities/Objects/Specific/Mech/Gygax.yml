@@ -1,0 +1,185 @@
+- type: entity
+  id: MechGygax
+  parent: BaseMech
+  name: Гайгекс СБЕ
+  description: Боевой мех, снабжёный лазерным пулемётом, что включает разные типы огня. Требует еще одну батарею для стрельбы. Для стрельбы нужно связать сам мех с передатчиком сигналов. Может использовать простую клешню.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: Sprite
+    drawdepth: Mobs
+    noRot: true
+    sprite: Objects/Specific/Mech/mecha.rsi
+    layers:
+    - map: [ "enum.MechVisualLayers.Base" ]
+      state: gygax
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+  - type: Mech
+    baseState: gygax
+    openState: gygax-open
+    brokenState: gygax-broken
+    mechToPilotDamageMultiplier: 0.45
+    pilotWhitelist:
+      components:
+        - HumanoidAppearance
+  - type: MeleeWeapon
+    hidden: false
+    attackRate: 3.5
+    damage:
+      types:
+        Slash: 10
+        Blunt: 15
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.22
+    baseSprintSpeed: 3.6
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      gun_magazine: !type:ContainerSlot
+  - type: Gun
+    fireRate: 5
+    useKey: false
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+      params:
+        variation: 0.05
+  - type: MagazineVisuals
+    magState: mag
+    steps: 10
+    zeroVisible: true
+  - type: Machine
+    board: ShuttleGunSvalinnMachineGunCircuitboard
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: MagazineAmmoProvider
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+    - Toggle
+    - On
+    - Off
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: StaticPrice
+    price: 950
+
+- type: entity
+  id: MechGygaxBattery
+  parent: MechGygax
+  suffix: Батарея
+  components:
+  - type: ContainerFill
+    containers:
+      mech-battery-slot:
+      - PowerCellHigh
+
+- type: entity
+  id: MechDarkGygax
+  parent: BaseMech
+  name: тёмный Гигакс
+  description: Боевой мех, снабжёный лазерным пулемётом, что включает разные типы огня. Требует еще одну батарею для стрельбы. Для стрельбы нужно связать сам мех с передатчиком сигналов. Может использовать простую клешню.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: Sprite
+    drawdepth: Mobs
+    noRot: true
+    sprite: Objects/Specific/Mech/mecha.rsi
+    layers:
+    - map: [ "enum.MechVisualLayers.Base" ]
+      state: darkgygax
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+  - type: Mech
+    baseState: darkgygax
+    openState: darkgygax-open
+    brokenState: darkgygax-broken
+    mechToPilotDamageMultiplier: 0.30
+    pilotWhitelist:
+      components:
+        - HumanoidAppearance
+  - type: MeleeWeapon
+    hidden: false
+    attackRate: 3.5
+    damage:
+      types:
+        Slash: 10
+        Blunt: 15
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.22
+    baseSprintSpeed: 3.6
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      gun_magazine: !type:ContainerSlot
+  - type: Gun
+    fireRate: 5
+    useKey: false
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+      params:
+        variation: 0.05
+  - type: MagazineVisuals
+    magState: mag
+    steps: 10
+    zeroVisible: true
+  - type: Machine
+    board: ShuttleGunSvalinnMachineGunCircuitboard
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: MagazineAmmoProvider
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+    - Toggle
+    - On
+    - Off
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: StaticPrice
+    price: 950
+
+- type: entity
+  id: MechDarkGygaxBattery
+  parent: MechDarkGygax
+  suffix: Батарея
+  components:
+  - type: ContainerFill
+    containers:
+      mech-battery-slot:
+      - PowerCellHigh

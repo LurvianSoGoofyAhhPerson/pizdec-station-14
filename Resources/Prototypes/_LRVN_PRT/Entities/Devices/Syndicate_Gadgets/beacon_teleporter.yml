@@ -1,0 +1,70 @@
+- type: entity
+  id: HandBeaconTeleporter
+  parent: BaseItem
+  name: телепортер по маячку синдиката
+  description: Модифицированная синдикатом версия телепортера научного руководителя. При первом нажатии создаёт маячок, на который и будет переносить портал, создаваемый при повтором нажатии. При третьем нажатии и маячок, и портал пропадут. Не чудо ли?
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Devices/hand_teleporter.rsi
+    layers:
+    - state: icon
+      color: "#535353"
+  - type: HandTeleporter
+    firstPortalPrototype: TeleporterBeacon
+    secondPortalPrototype: PortalRed
+
+- type: entity
+  parent: BaseItem
+  id: TeleporterBeacon
+  name: маячок портала
+  description: Небольшое устройство, указывающее порталу, куда переносить входящие объекты. 
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _LRVN_TEX/Structures/Holo/beacon_teleporter.rsi
+    state: icon
+  - type: PointLight
+    enabled: true
+    radius: 2
+    color: "#ad3939"
+  - type: Appearance
+  - type: Visibility
+    layer: 1
+  - type: Anchorable
+  - type: CollideOnAnchor
+  - type: Physics
+    canCollide: false
+    bodyType: static
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+            params:
+              volume: -8
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetSteel1:
+              min: 1
+              max: 2
+          offset: 0
+        - !type:DoActsBehavior
+          acts: ["Breakage"]
+  - type: StaticPrice
+    price: 60

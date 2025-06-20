@@ -39,3 +39,16 @@
     Telecrystal: 6
   categories:
     - UplinkAllies
+
+- type: listing
+  id: UplinkHandBeaconTeleporter
+  name: Телепортер по маячку
+  description: Модифицированная синдикатом версия телепортера научного руководителя. При первом нажатии создаёт маячок, на который и будет переносить портал, создаваемый при повтором нажатии. При третьем нажатии и маячок, и портал пропадут. Не чудо ли?
+  productEntity: HandBeaconTeleporter
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkDisruption

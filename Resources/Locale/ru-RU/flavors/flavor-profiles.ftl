@@ -186,6 +186,7 @@ flavor-complex-true-nature = как истинная природа реальн
 flavor-complex-false-meat = как не совсем не мясо
 flavor-complex-paper = как кашеобразная масса
 flavor-complex-compressed-meat = как спрессованное мясо
+flavor-complex-dog-food = like dog food
 
 # Drink-specific flavors.
 
@@ -319,7 +320,7 @@ flavor-complex-dark-and-stormy = как имбирный эль, сдобрен�
 flavor-complex-grog = как шанти
 flavor-complex-hippies-delight = как будто ваше кровяное давление снижается
 flavor-complex-hooch = как будто это было бы восхитительно, будь вы дизельным двигателем
-flavor-complex-manhattan = как вид из окна пятизвездочного отеля
+flavor-complex-manhattan = как вид из окна пятизвёздочного отеля
 flavor-complex-manhattan-project = как будто теперь я стал Смертью, разрушителем миров
 flavor-complex-margarita = как очень сильное похмелье
 flavor-complex-martini = как шпионский фильм

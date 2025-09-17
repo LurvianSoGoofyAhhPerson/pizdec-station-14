@@ -221,5 +221,7 @@ ent-FloorTileItemXenoSteelCorner = стальной угловой ксеноп�
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemXenoMaint = технический ксенопол
     .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemXenoborg = ксеноборг-пол
+    .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemDarkSquiggly = тёмная волнистая стальная плитка
     .desc = { ent-FloorTileItemDark.desc }

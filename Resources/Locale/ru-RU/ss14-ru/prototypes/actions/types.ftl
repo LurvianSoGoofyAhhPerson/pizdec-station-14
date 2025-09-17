@@ -1,5 +1,7 @@
 ent-BaseAction = { "" }
     .desc = { "" }
+ent-BaseDoAfterAction = { ent-BaseAction }
+    .desc = { ent-BaseAction.desc }
 ent-BaseMentalAction = { ent-BaseAction }
     .desc = { ent-BaseAction.desc }
 ent-BaseSuicideAction = { ent-BaseMentalAction }
@@ -63,7 +65,9 @@ ent-FakeMindShieldToggleAction = [color=green]Переключить фальш�
 ent-ActionToggleParamedicSiren = Переключить сирену парамедика
     .desc = Включает или выключает сирену парамедика.
 ent-ActionGravityJump = Прыгнуть
-    .desc = Активируя усовершенствованную систему перемещения, вы совершаете короткий прыжок в направлении вашего взгляда..
+    .desc = Активируя усовершенствованную систему перемещения, вы совершаете короткий прыжок в направлении вашего взгляда.
+ent-ActionVulpkaninGravityJump = Leap
+    .desc = Use your agile legs to leap a short distance. Be careful not to bump into anything!
 ent-ActionToggleRootable = Укоренение
     .desc = Начните или прекратите укореняться к полу.
 ent-ActionChameleonController = Управление одеждой

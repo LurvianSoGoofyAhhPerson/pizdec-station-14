@@ -1,6 +1,6 @@
-ent-StatusEffectSlowdown = замедленние
+ent-StatusEffectSlowdown = замедление
     .desc = { ent-MobStatusEffectDebuff.desc }
-ent-VomitingSlowdownStatusEffect = замедленние от тошноты
+ent-VomitingSlowdownStatusEffect = замедление от тошноты
     .desc = { ent-StatusEffectSlowdown.desc }
 ent-TaserSlowdownStatusEffect = замедление от тазера
     .desc = { ent-StatusEffectSlowdown.desc }
@@ -12,5 +12,3 @@ ent-StatusEffectFriction = трение
     .desc = { ent-MobStatusEffectDebuff.desc }
 ent-StatusEffectStunned = оглушение
     .desc = { ent-MobStatusEffectDebuff.desc }
-ent-StatusEffectKnockdown = сбит с ног
-    .desc = { ent-MobStandStatusEffectBase.desc }
